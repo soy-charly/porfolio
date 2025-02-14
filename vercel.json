@@ -4,16 +4,32 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "js/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "pages/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "style/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    },
-    {
       "src": "/aboutme",
       "dest": "/pages/aboutme.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/pages/contact.html"
     },
     {
       "src": "/knowledge",
@@ -24,12 +40,8 @@
       "dest": "/pages/portfolio.html"
     },
     {
-      "src": "/contact",
-      "dest": "/pages/contact.html"
-    },
-    {
-      "src": "/styles/(.*)",
-      "dest": "/styles/$1"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
