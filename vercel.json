@@ -17,11 +17,11 @@
     },
     {
       "src": "/knowledge",
-      "dest": "/pages/aboutme.html"
+      "dest": "/pages/knowledge.html"
     },
     {
       "src": "/portfolio",
-      "dest": "/pages/porfolio.html"
+      "dest": "/pages/portfolio.html"
     },
     {
       "src": "/contact",
