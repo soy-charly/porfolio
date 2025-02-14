@@ -26,6 +26,10 @@
     {
       "src": "/contact",
       "dest": "/pages/contact.html"
+    },
+    {
+      "src": "/styles/(.*)",
+      "dest": "/styles/$1"
     }
   ]
 }
