@@ -1,0 +1,14 @@
+portfolio
+├── assets
+├── js
+│   └── scroll.js
+├── pages
+│   ├── aboutme.html
+│   ├── contact.html
+│   ├── knowledge.html
+│   └── portfolio.html
+├── style
+│   └── style.css
+├── index.html
+├── vercel.json
+└── README.md

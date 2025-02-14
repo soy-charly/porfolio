@@ -4,41 +4,9 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
-    },
-    {
-      "src": "assets/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "js/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "pages/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "style/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
-    {
-      "src": "/aboutme",
-      "dest": "/pages/aboutme.html"
-    },
-    {
-      "src": "/contact",
-      "dest": "/pages/contact.html"
-    },
-    {
-      "src": "/knowledge",
-      "dest": "/pages/knowledge.html"
-    },
-    {
-      "src": "/portfolio",
-      "dest": "/pages/portfolio.html"
-    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
