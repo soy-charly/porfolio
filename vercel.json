@@ -1,13 +1,15 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/pages/:page(aboutme|contact|knowledge|portfolio)",
-      "destination": "/:page",
-      "permanent": true
-    },
-    {
-      "source": "/pages/:page(aboutme|contact|knowledge|portfolio).html",
+      "source": "/pages/:page(aboutme|contact|knowledge|portfolio)(.html)?",
       "destination": "/:page",
       "permanent": true
     }
