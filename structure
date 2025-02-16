@@ -10,5 +10,4 @@ portfolio
 ├── style
 │   └── style.css
 ├── index.html
-├── vercel.json
-└── README.md
+└── vercel.json

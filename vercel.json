@@ -1,8 +1,12 @@
 {
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/pages/:path*", "destination": "/:path*", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/aboutme", "destination": "/pages/aboutme.html" },
+    { "source": "/contact", "destination": "/pages/contact.html" },
+    { "source": "/knowledge", "destination": "/pages/knowledge.html" },
+    { "source": "/portfolio", "destination": "/pages/portfolio.html" }
   ]
 }
