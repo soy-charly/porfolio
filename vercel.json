@@ -1,4 +1,35 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "rewrites": [
+    {
+      "source": "/aboutme",
+      "destination": "/pages/aboutme.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/knowledge",
+      "destination": "/pages/knowledge.html"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/pages/portfolio.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/style/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
 }
