@@ -2,10 +2,6 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
       "source": "/aboutme",
       "destination": "/pages/aboutme.html"
     },
@@ -20,6 +16,13 @@
     {
       "source": "/portfolio",
       "destination": "/pages/portfolio.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/pages/:path",
+      "destination": "/:path",
+      "permanent": true
     }
   ]
 }
