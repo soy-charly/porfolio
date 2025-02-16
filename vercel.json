@@ -1,22 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true,
-  "rewrites": [
-    {
-      "source": "/aboutme",
-      "destination": "/pages/aboutme.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/pages/contact.html"
-    },
-    {
-      "source": "/knowledge",
-      "destination": "/pages/knowledge.html"
-    },
-    {
-      "source": "/portfolio",
-      "destination": "/pages/portfolio.html"
-    }
-  ]
+  "trailingSlash": true
 }
