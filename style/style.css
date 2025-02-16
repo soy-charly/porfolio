@@ -289,11 +289,13 @@ h1 {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;
-  background-color: var(--negro);
+  background-color: #000;
   padding: 1rem 2rem;
   gap: 1rem;
 }
@@ -576,7 +578,6 @@ footer * {
   gap: 2rem;
   padding: 2rem;
 }
-
 .knowledge__item {
   display: flex;
   flex-direction: column;
