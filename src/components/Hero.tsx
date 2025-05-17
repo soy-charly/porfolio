@@ -9,6 +9,8 @@ export const Hero = () => {
         </h1>
         <p>
           Junior Developer passionate about creating beautiful and functional web applications
+          <br/><br/>
+          <span className='highlight'>Esta pagina esta actualmente en desarrollo.</span>
         </p>
         <div className="hero-buttons">
           <Link to="/projects" className="btn btn-primary">
