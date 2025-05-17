@@ -1,127 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portafolio de Carlos Sánchez Carrasco, Backend Developer especializado en JavaScript y Python.">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Montserrat:wght@100;400;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Link y preload CSS -->
-    <link rel="preload" href="./style/style.css" as="style">
-    <link rel="stylesheet" href="./style/style.css">
-
-    <!-- Preload imagen -->
-    <link rel="preload" href="./assets/gaming.jpg" as="image">
-
-    <!-- Prefetch -->
-    <link rel="prefetch" href="./pages/aboutme.html">
-
-    <!-- FontAwesome -->
-    <script defer src="https://kit.fontawesome.com/c569a510c1.js" crossorigin="anonymous"></script>
-
-    <title>Carlos Sánchez Carrasco</title>
-</head>
-
-<body id="cuerpo">
-    <header>
-        <div id="all__hero" class="header__hero">
-            <nav class="header__nav">
-                <a href="#">Carlos Sánchez</a>
-                <hr>
-                <ul class="nav__container">
-                    <li class="nav__item"><a href="./pages/aboutme.html">About Me</a></li>
-                    <li class="nav__item"><a href="./pages/knowledge.html">Conocimientos</a></li>
-                    <li class="nav__item"><a href="./pages/portfolio.html">Portfolio</a></li>
-                    <li class="nav__item"><a href="./pages/contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div id="text__hero" class="hero__support flexcenter">
-                <div class="hero__text">
-                    <blockquote>"Toma una idea. Hazla tu vida: piensa sobre ella, sueña con ella, vivela. Deja que tus
-                        músculos, cerebro, nervios y cada parte de tu cuerpo se llenen de esa idea. Luego deja toda las
-                        demás ideas solas. Ese es el camino hacia el exito."</blockquote>
-                    <p>Swami Vivekananda</p>
-                </div>
-            </div>
-            <div id="btn__container" class="flexcenter">
-                <a id="btntodown" href="#init" onclick="todown(400)"><i class="fa-solid fa-caret-down"></i></a>
-            </div>
-        </div>
-    </header>
-    <div id="init" class="header__trim"></div>
-
-    <main>
-        <h1>Backend<br>Developer</h1>
-        <section class="main__developer">
-            <article class="developer__article">
-                <div class="article__image flexcenter">
-                    <h2>Backend</h2>
-                    <p class="image__btn" onclick="showme('backend', 'on')">Pulsa aquí<br>para más información</p>
-                    <div id="card__backend" class="image__card flexcenter">
-                        <div class="card__icons flexcenter">
-                            <i class="fa-brands fa-node"></i>
-                            <i class="fa-brands fa-js-square"></i>
-                            <i class="fa-brands fa-python"></i>
-                        </div>
-                        <p onclick="showme('backend', 'off')">Volver</p>
-                    </div>
-                </div>
-                <div class="article__text">
-                    <h3>Lógica y orden</h3>
-                    <p>Por muy importante que sea la estética en un proyecto, la lógica no se queda en segundo puesto,
-                        siendo esta una parte indispensable, ya que sin ella no existiría ningún tipo de funcionalidad
-                        más allá que la estética.
-                    </p>
-                    <br>
-                    <p>Siempre hay que tener en cuenta hasta el mínimo detalle, esta es la única forma de asegurar el
-                        correcto funcionamiento del sistema y con ello una perfecta experiencia de usuario.
-                    </p>
-                </div>
-            </article>
-            <article class="developer__article">
-                <div class="article__image flexcenter">
-                    <h2>Data Base</h2>
-                    <p class="image__btn" onclick="showme('database', 'on')">Pulsa aquí<br>para más información</p>
-                    <div id="card__database" class="image__card flexcenter">
-                        <div class="card__icons flexcenter">
-                            <i class="fa-solid fa-database"></i>
-                            <img src="../assets/Icons/mysql-ar21.svg" alt="">
-                            <img src="../assets/Icons/mongodb-icon.svg" alt="">
-                        </div>
-                        <p onclick="showme('database', 'off')">Volver</p>
-                    </div>
-                </div>
-                <div class="article__text">
-                    <h3>Gestión y almacenamiento</h3>
-                    <p>Las bases de datos son esenciales para almacenar y gestionar grandes cantidades de información de manera eficiente y segura. Un buen diseño de base de datos asegura la integridad y disponibilidad de los datos.</p>
-                    <br>
-                    <p>Es crucial elegir la tecnología adecuada según las necesidades del proyecto, ya sea SQL para estructuras relacionales o NoSQL para datos más flexibles y escalables.</p>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <p>Todos los derechos reservados.</p>
-        <ul>
-            <li><a href="https://github.com/soy-charly" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/soy-charly/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://x.com/soy__charly/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-            </li>
-        </ul>
-    </footer>
-
-    <script src="./js/scroll.js"></script>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Sánchez</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+
