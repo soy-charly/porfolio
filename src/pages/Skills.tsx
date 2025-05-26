@@ -1,4 +1,3 @@
-import { Skill } from '../types';
 import { skills } from '../data/skills';
 
 export const Skills = () => {
