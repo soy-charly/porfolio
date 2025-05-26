@@ -10,7 +10,7 @@ export const Hero = () => {
         <p>
           Junior Developer passionate about creating beautiful and functional web applications
           <br/><br/>
-          <span className='highlight'>Esta pagina esta actualmente en desarrollo.</span>
+          <span className='highlight'>Esta pagina esta actualmente en desarrollo. <br /> Los contenidos pueden no ser precisos</span>
         </p>
         <div className="hero-buttons">
           <Link to="/projects" className="btn btn-primary">

@@ -286,6 +286,12 @@ body {
   padding: 1.5rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .dark .skill-card {
@@ -293,31 +299,21 @@ body {
 }
 
 .skill-icon {
-  font-size: 2.5rem;
+  width: 48px;
+  height: 48px;
   margin-bottom: 1rem;
+  color: currentColor;
 }
 
 .skill-card h4 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  color: #1f2937;
 }
 
-.skill-card p {
-  color: #6b7280;
-  margin-bottom: 1rem;
-}
-
-.dark .skill-card p {
-  color: #9ca3af;
-}
-
-.skill-level {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  color: white;
+.dark .skill-card h4 {
+  color: #f3f4f6;
 }
 
 /* Loading and Error States */
@@ -350,4 +346,87 @@ body {
   .hero h1 {
     font-size: 3.75rem;
   }
+}
+
+/* Languages Section */
+.languages {
+  padding: 4rem 1rem;
+}
+
+.languages h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.languages-category {
+  margin-bottom: 3rem;
+}
+
+.languages-category h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.dark .languages-category h3 {
+  color: #f3f4f6;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.language-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.dark .language-card {
+  background-color: #1f2937;
+}
+
+.language-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  color: currentColor;
+}
+
+.language-card h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+}
+
+.dark .language-card h4 {
+  color: #f3f4f6;
+}
+
+.language-level {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.dark .language-level {
+  background-color: #374151;
+  color: #d1d5db;
 }

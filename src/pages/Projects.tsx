@@ -1,40 +1,13 @@
-import { useEffect, useState } from 'react';
-import { Project } from '../types';
+import { projects } from '../data/projects';
 
 export const Projects = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch('/api/projects');
-        if (!response.ok) throw new Error('Error al cargar los proyectos');
-        const data = await response.json();
-        setProjects(data.sort((a: Project, b: Project) => 
-          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-        ));
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Error desconocido');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProjects();
-  }, []);
-
-  if (loading) return <div className="container">Cargando proyectos...</div>;
-  if (error) return <div className="container error">{error}</div>;
-
   return (
     <section className="projects">
       <div className="container">
         <h2>Proyectos</h2>
         <div className="projects-grid">
-          {projects.map((project) => (
-            <div key={project._id} className="project-card">
+          {projects.map((project, index) => (
+            <div key={index} className="project-card">
               <div 
                 className="project-image"
                 style={{ backgroundImage: `url(${project.imageUrl})` }}

@@ -1,22 +1,24 @@
+import { IconType } from 'react-icons';
+
 export type SkillLevel = 'Aprendiendo' | 'Básico' | 'Medio' | 'Avanzado';
 
 export interface Skill {
-  _id: string;
   name: string;
   category: 'Frontend' | 'Backend' | 'Other';
-  level: SkillLevel;
-  icon: string; // SVG string
-  description: string;
+  icon: IconType;
+}
+
+export interface Language {
+  name: string;
+  icon: IconType;
+  level: 'Básico' | 'Intermedio' | 'Avanzado';
 }
 
 export interface Project {
-  _id: string;
   title: string;
   description: string;
   imageUrl: string;
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
-  createdAt: string;
-  updatedAt: string;
 } 
