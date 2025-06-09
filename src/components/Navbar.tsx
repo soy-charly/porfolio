@@ -28,7 +28,7 @@ export const Navbar = () => {
         <div className="nav-links">
           <Link to="/" className="nav-link">Inicio</Link>
           <Link to="/projects" className="nav-link">Proyectos</Link>
-          <Link to="/skills" className="nav-link">Habilidades</Link>
+          <Link to="/skills" className="nav-link">Frameworks</Link>
           <Link to="/languages" className="nav-link">Lenguajes</Link>
           <button
             onClick={() => setDarkMode(!darkMode)}
