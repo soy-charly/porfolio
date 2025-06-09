@@ -1,10 +1,11 @@
 import { IconType } from 'react-icons';
 
-export type SkillLevel = 'Aprendiendo' | 'Básico' | 'Medio' | 'Avanzado';
+export type SkillLevel = 'Aprendiendo' | 'Básico' | 'Intermedio' | 'Avanzado';
 
 export interface Skill {
   name: string;
   category: 'Frontend' | 'Backend' | 'Other';
+  level: SkillLevel;
   icon: IconType;
 }
 

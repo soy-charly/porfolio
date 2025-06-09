@@ -2,12 +2,12 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
-    title: "placeholder",
-    description: "placeholder",
-    imageUrl: "/path/to/image1.jpg",
-    technologies: ["React", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/soy-charly/placeholder",
-    liveUrl: "https://placeholder.com"
+    title: "portfolio",
+    description: "My personal portfolio website showcasing my skills and projects.",
+    imageUrl: "/img/portfolio.png",
+    technologies: ["React", "TypeScript", "CSS"],
+    githubUrl: "https://github.com/soy-charly/porfolio",
+    liveUrl: "https://charly.is-a.dev"
   },
-  // Add more projects as needed
-]; 
+
+];

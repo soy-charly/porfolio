@@ -20,6 +20,7 @@ export const Skills = () => {
                 <div key={index} className="skill-card">
                   <Icon className="skill-icon" />
                   <h4>{skill.name}</h4>
+                  <p className="skill-level">{skill.level}</p>
                 </div>
               );
             })}
@@ -36,6 +37,7 @@ export const Skills = () => {
                 <div key={index} className="skill-card">
                   <Icon className="skill-icon" />
                   <h4>{skill.name}</h4>
+                  <p className="skill-level">{skill.level}</p>
                 </div>
               );
             })}
@@ -52,6 +54,7 @@ export const Skills = () => {
                 <div key={index} className="skill-card">
                   <Icon className="skill-icon" />
                   <h4>{skill.name}</h4>
+                  <p className="skill-level">{skill.level}</p>
                 </div>
               );
             })}
@@ -60,4 +63,4 @@ export const Skills = () => {
       </div>
     </section>
   );
-}; 
+};

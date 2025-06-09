@@ -3,10 +3,9 @@ import {
   SiJavascript,
   SiPython,
   SiTypescript,
-  SiCplusplus,
-  SiPhp
+  SiCss3,
+  SiHtml5,
 } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
 
 export const languages: Language[] = [
   {
@@ -14,29 +13,25 @@ export const languages: Language[] = [
     icon: SiJavascript,
     level: "Avanzado"
   },
-  {
-    name: "Python",
-    icon: SiPython,
-    level: "Intermedio"
-  },
-  {
+    {
     name: "TypeScript",
     icon: SiTypescript,
     level: "Intermedio"
   },
   {
-    name: "Java",
-    icon: FaJava,
-    level: "Básico"
+    name: "HTML",
+    icon: SiHtml5,
+    level: "Avanzado"
   },
   {
-    name: "C++",
-    icon: SiCplusplus,
-    level: "Básico"
+    name: "CSS",
+    icon: SiCss3,
+    level: "Intermedio"
   },
   {
-    name: "PHP",
-    icon: SiPhp,
-    level: "Básico"
-  }
+    name: "Python",
+    icon: SiPython,
+    level: "Intermedio"
+  },
+
 ]; 
